@@ -1,4 +1,3 @@
-#actividad 2 #
-pagina de catalogo de bicicletas de ruta en html
-version de prueba
-Ricardo Rodriguez 
+# practica 2 html#
+este directorio contiene la primer practica html tema libre iniciando con comandos y estructura basica.
+## Ricardo Rodroguez
