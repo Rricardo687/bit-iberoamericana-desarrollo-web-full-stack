@@ -4,8 +4,10 @@
   "description": "mi primer API resful",
   "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
   },
+
   "keywords": [
     "api",
     "server",
@@ -15,5 +17,8 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
