@@ -23,8 +23,6 @@ server.get('/', (request, response) => {
     response.send('Hola desde la raíz');
   });
 
-  server.use('/api/v1',todosRouter);
-
 
 
   server.listen(port, () => {
