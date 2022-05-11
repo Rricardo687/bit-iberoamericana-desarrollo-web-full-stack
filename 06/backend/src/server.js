@@ -4,13 +4,12 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const todosRouter = require('./routes/todos');
 
-
-
 const server = express();
 const port = 4000;
+
 server.use(cors());
 server.use(express.json());
-server.use('/api/v1',todosRouter);
+server.use('/api/v1', todosRouter);
 
 dotenv.config();
 
@@ -22,11 +21,9 @@ mongoose
   );
 
 server.get('/', (request, response) => {
-    response.send('Hola desde la raíz');
-  });
+  response.send('Hola desde la raíz');
+});
 
-
-
-  server.listen(port, () => {
-    console.log(`Servidor corriendo en localhost, en el puerto ${port}`);
-  });
+server.listen(port, () => {
+  console.log(`Servidor corriendo en localhost, en el puerto ${port}`);
+});
